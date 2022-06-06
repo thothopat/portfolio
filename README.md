@@ -1,4 +1,4 @@
-# Personal Portfolio with React
+# Personal Portfolio Website with React
 
 This project I intend to learn reactjs. I shall be building my personal portfolio using Reactjs in a journey to learn Reactjs. I intend to use firestore auth and NoSQl database CRUD functions to update the profile.
 

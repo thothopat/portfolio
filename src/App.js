@@ -1,10 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Header from './components/Header.js';
+import About from './components/About.js';
+import Career from './components/Career.js';
+import Projects from './components/Projects.js';
 
-function App() {
+/*function App() {
   return (
-    <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div>
+      <h1>Hallo World</h1>
+    </div>
   );
-}
-
+}*/
+const App = () => (
+    <>
+      <Header />
+      <About />
+      <Career />
+      <Projects />
+    </>
+  );
 export default App;
