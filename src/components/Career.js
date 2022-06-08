@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
+import db from "../config/Firebase.config";
 
 const Career = () => {
+	/*const [bio, setBio] = useState([]);
+	useEffect(async () => {
+		const docRef = doc(db, "bioData", "bio");
+		const docSnap = await getDoc(docRef);
+		if (docSnap.exists()) {
+		  console.log("Document data:", docSnap.data());
+		} else {
+		  // doc.data() will be undefined in this case
+		  console.log("No such document!");
+		}
+	}, []);*/
 	return (
 		<section className="pt-2 lg:pt-[20px] pb-10 lg:pb-2 bg-[#F3F4F6]">
 		<div className="py-12 bg-white">
