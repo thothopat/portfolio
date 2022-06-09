@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import db from "../config/Firebase.config";
+import { db } from "../config/Firebase.config";
 import { doc, getDoc } from "firebase/firestore";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
     const docRef = doc(db, "bioData", "bio");
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-      // console.log("Document data:", docSnap.data());
+      console.log("Document data:", docSnap.data());
       setBio([...bio,docSnap.data()])
     } else {
       // doc.data() will be undefined in this case
